@@ -1,0 +1,1 @@
+export { default } from 'ember-addon-template/components/eoc-sidebar';
