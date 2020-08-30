@@ -3,7 +3,7 @@
     example menus 
     these menus will be on top of the push wrapper
   -->
-  <EocSidebar @effect="st-effect-1">
+  <EocSidebar @effect="st-effect-slide-in-on-top">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -14,7 +14,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-2">
+  <EocSidebar @effect="st-effect-reveal">
     <h2 class="icon icon-stack">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -25,7 +25,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-4">
+  <EocSidebar @effect="st-effect-slide-along">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -36,7 +36,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-5">
+  <EocSidebar @effect="st-effect-reverse-slide-out">
     <h2 class="icon icon-stack">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -47,7 +47,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-9">
+  <EocSidebar @effect="st-effect-scale-down-pusher">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -58,7 +58,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-10">
+  <EocSidebar @effect="st-effect-scale-up">
     <h2 class="icon icon-stack">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -69,7 +69,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-11">
+  <EocSidebar @effect="st-effect-scale-rotate-pusher">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -80,7 +80,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-12">
+  <EocSidebar @effect="st-effect-open-door">
     <h2 class="icon icon-stack">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -91,7 +91,7 @@
     </ul>
   </EocSidebar>
 
-  <EocSidebar @effect="st-effect-13">
+  <EocSidebar @effect="st-effect-fall-down">
     <h2 class="icon icon-stack">Sidebar</h2>
     <ul>
       <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -109,7 +109,7 @@
       these menus will be under the push wrapper
     -->
 
-    <EocSidebar @effect="st-effect-3">
+    <EocSidebar @effect="st-effect-push">
       <h2 class="icon icon-lab">Sidebar</h2>
       <ul>
         <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -120,7 +120,7 @@
       </ul>
     </EocSidebar>
 
-    <EocSidebar @effect="st-effect-6">
+    <EocSidebar @effect="st-effect-rotate-pusher">
       <h2 class="icon icon-stack">Sidebar</h2>
       <ul>
         <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -131,7 +131,7 @@
       </ul>
     </EocSidebar>
 
-    <EocSidebar @effect="st-effect-7">
+    <EocSidebar @effect="st-effect-3d-rotate-in">
       <h2 class="icon icon-lab">Sidebar</h2>
       <ul>
         <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -142,7 +142,7 @@
       </ul>
     </EocSidebar>
 
-    <EocSidebar @effect="st-effect-8">
+    <EocSidebar @effect="st-effect-3d-rotate-out">
       <h2 class="icon icon-stack">Sidebar</h2>
       <ul>
         <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -153,7 +153,7 @@
       </ul>
     </EocSidebar>
 
-    <EocSidebar @effect="st-effect-14">
+    <EocSidebar @effect="st-effect-delayed-3d-rotate">
       <h2 class="icon icon-stack">Sidebar</h2>
       <ul>
         <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -176,20 +176,20 @@
         </header>
         <div class="main clearfix">
           <div id="st-trigger-effects" class="column">
-            <button data-effect="st-effect-1" {{eoc-sidebar-trigger "st-effect-1"}}>Slide in on top</button>
-            <button data-effect="st-effect-2" {{eoc-sidebar-trigger "st-effect-2"}}>Reveal</button>
-            <button data-effect="st-effect-3" {{eoc-sidebar-trigger "st-effect-3"}}>Push</button>
-            <button data-effect="st-effect-4" {{eoc-sidebar-trigger "st-effect-4"}}>Slide along</button>
-            <button data-effect="st-effect-5" {{eoc-sidebar-trigger "st-effect-5"}}>Reverse slide out</button>
-            <button data-effect="st-effect-6" {{eoc-sidebar-trigger "st-effect-6"}}>Rotate pusher</button>
-            <button data-effect="st-effect-7" {{eoc-sidebar-trigger "st-effect-7"}}>3D rotate in</button>
-            <button data-effect="st-effect-8" {{eoc-sidebar-trigger "st-effect-8"}}>3D rotate out</button>
-            <button data-effect="st-effect-9" {{eoc-sidebar-trigger "st-effect-9"}}>Scale down pusher</button>
-            <button data-effect="st-effect-10" {{eoc-sidebar-trigger "st-effect-10"}}>Scale Up</button>
-            <button data-effect="st-effect-11" {{eoc-sidebar-trigger "st-effect-11"}}>Scale &amp; rotate pusher</button>
-            <button data-effect="st-effect-12" {{eoc-sidebar-trigger "st-effect-12"}}>Open door</button>
-            <button data-effect="st-effect-13" {{eoc-sidebar-trigger "st-effect-13"}}>Fall down</button>
-            <button data-effect="st-effect-14" {{eoc-sidebar-trigger  "st-effect-14"}}>Delayed 3D Rotate</button>
+            <button data-effect="st-effect-1" {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
+            <button data-effect="st-effect-2" {{eoc-sidebar-trigger "st-effect-reveal"}}>Reveal</button>
+            <button data-effect="st-effect-3" {{eoc-sidebar-trigger "st-effect-push"}}>Push</button>
+            <button data-effect="st-effect-4" {{eoc-sidebar-trigger "st-effect-slide-along"}}>Slide along</button>
+            <button data-effect="st-effect-5" {{eoc-sidebar-trigger "st-effect-reverse-slide-out"}}>Reverse slide out</button>
+            <button data-effect="st-effect-6" {{eoc-sidebar-trigger "st-effect-rotate-pusher"}}>Rotate pusher</button>
+            <button data-effect="st-effect-7" {{eoc-sidebar-trigger "st-effect-3d-rotate-in"}}>3D rotate in</button>
+            <button data-effect="st-effect-8" {{eoc-sidebar-trigger "st-effect-3d-rotate-out"}}>3D rotate out</button>
+            <button data-effect="st-effect-9" {{eoc-sidebar-trigger "st-effect-scale-down-pusher"}}>Scale down pusher</button>
+            <button data-effect="st-effect-10" {{eoc-sidebar-trigger "st-effect-scale-up"}}>Scale Up</button>
+            <button data-effect="st-effect-11" {{eoc-sidebar-trigger "st-effect-scale-rotate-pusher"}}>Scale &amp; rotate pusher</button>
+            <button data-effect="st-effect-12" {{eoc-sidebar-trigger "st-effect-open-door"}}>Open door</button>
+            <button data-effect="st-effect-13" {{eoc-sidebar-trigger "st-effect-fall-down"}}>Fall down</button>
+            <button data-effect="st-effect-14" {{eoc-sidebar-trigger  "st-effect-delayed-3d-rotate"}}>Delayed 3D Rotate</button>
           </div>
           <div class="column">
             <p>Sidebar menus or off-canvas navigations can be revealed in many creative ways.</p>

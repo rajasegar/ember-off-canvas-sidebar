@@ -1,1 +1,1 @@
-export { default } from 'ember-addon-template/modifiers/eoc-sidebar-trigger';
+export { default } from 'ember-off-canvas-sidebar/modifiers/eoc-sidebar-trigger';

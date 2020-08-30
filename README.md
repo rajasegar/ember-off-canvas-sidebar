@@ -39,8 +39,50 @@ Usage
 
 ### Trigger
 ```hbs
-<button data-effect="st-effect-1" {{eoc-sidebar-trigger "st-effect-1"}}>Slide in on top</button>
+<button  {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
 ```
+
+## Styles
+Ember off-canvas sidebar come with about 14 different transitions for the sidebar. 
+Just give any one of the following values for the *eoc-sidebar-trigger* modifier of the trigger element.
+- st-effect-slide-in-on-top (default)
+- st-effect-reveal
+- st-effect-3d-rotate-in
+- st-effect-3d-rotate-out
+- st-effect-delayed-3d-rotate
+- st-effect-fall-down
+- st-effect-open-door
+- st-effect-push
+- st-effect-reverse-slide-out
+- st-effect-rotate-pusher
+- st-effect-scale-down-pusher
+- st-effect-scale-rotate-pusher
+- st-effect-scale-up
+- st-effect-slide-along
+
+## Configuring
+Add a configuration for `ember-off-canvas-sidebar` to include only the themes that you will use.
+```js
+ENV['ember-off-canvas-sidebar'] = {
+  includedTransitions: ['st-effect-open-door', 'st-effect-fall-down'],
+  excludedTransitions: ['st-effect-scale-up'],
+  excludeBaseStyles: false, // defaults to false
+  defaultTransition: 'st-effect-slide-in-on-top',    // defaults to 'st-effect-slide-in-on-top'
+};
+```
+
+To exclude or not include a transition, means that it's css styles will not be bundled with your application, thus not polluting your app.
+
+> **Note:** including a blank array e.g. `includeTransitions: []` will not include any themes, leaving
+you to define your own theme styles. See the `vendor/ember-off-canvas-sidebar/transitions` directory
+for reference.
+
+> **Note:** you may also want to set `excludeBaseStyles: true` so that this addon doesn't include the styles
+used by all the transitions.
+
+A big Thanks to [Ilya Radchenko](https://github.com/knownasilya) for making this configuration possible to have
+a small memory footprint of css in your app when you are using the addon.
+
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -59,3 +101,7 @@ License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
+
+## Credits
+* [Mary Lou](https://github.com/crnacura)
+* [Ilya Radchenko](https://github.com/knownasilya)

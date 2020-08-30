@@ -1,0 +1,36 @@
+/* Effect 12: Open door */
+
+.st-effect-open-door.st-container {
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+}
+
+.st-effect-open-door .st-pusher {
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.st-effect-open-door.st-menu-open .st-pusher {
+	-webkit-transform: rotateY(-10deg);
+	transform: rotateY(-10deg);
+}
+
+.st-effect-open-door.st-menu {
+	opacity: 1;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.st-effect-open-door.st-menu-open .st-effect-open-door.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.st-effect-open-door.st-menu::after {
+	display: none;
+}

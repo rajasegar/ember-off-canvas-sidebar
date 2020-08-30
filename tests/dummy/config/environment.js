@@ -29,6 +29,24 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['ember-off-canvas-sidebar'] = {
+      includedTransitions: [
+        'st-effect-slide-in-on-top',
+        'st-effect-reveal',
+        'st-effect-3d-rotate-in',
+        'st-effect-3d-rotate-out',
+        'st-effect-delayed-3d-rotate',
+        'st-effect-fall-down',
+        'st-effect-open-door',
+        'st-effect-push',
+        'st-effect-reverse-slide-out',
+        'st-effect-rotate-pusher',
+        'st-effect-scale-down-pusher',
+        'st-effect-scale-rotate-pusher',
+        'st-effect-scale-up',
+        'st-effect-slide-along',
+      ]
+    };
   }
 
   if (environment === 'test') {

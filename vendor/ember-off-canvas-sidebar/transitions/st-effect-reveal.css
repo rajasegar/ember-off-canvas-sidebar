@@ -1,0 +1,19 @@
+/* Effect 2: Reveal */
+.st-effect-reveal.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(300px, 0, 0);
+	transform: translate3d(300px, 0, 0);
+}
+
+.st-effect-reveal.st-menu {
+	z-index: 1;
+}
+
+.st-effect-reveal.st-menu-open .st-effect-reveal.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.st-effect-reveal.st-menu::after {
+	display: none;
+}

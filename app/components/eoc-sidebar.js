@@ -1,1 +1,1 @@
-export { default } from 'ember-addon-template/components/eoc-sidebar';
+export { default } from 'ember-off-canvas-sidebar/components/eoc-sidebar';
