@@ -1,6 +1,6 @@
 {
   "name": "ember-off-canvas-sidebar",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ember addon for off-canvas sidebar menu with transition effects.",
   "keywords": [
     "ember-addon",
