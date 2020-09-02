@@ -25,6 +25,7 @@ Usage
 
 ### Menu
 ```hbs
+<div id="st-container" class="st-container">
   <EocSidebar @effect="st-effect-1">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
@@ -35,12 +36,23 @@ Usage
       <li><a class="icon icon-wallet" href="#">Credits</a></li>
     </ul>
   </EocSidebar>
+
+
+    <div class="st-content"><!-- this is the wrapper for the content -->
+      <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+        <!-- YOUR MAIN CONTENT GOES HERE -->
+        <!-- YOU CAN KEEP THE TRIGGER HERE ALSO -->
+      </div>
+    </div>
+</div>
 ```
 
 ### Trigger
 ```hbs
 <button  {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
 ```
+
+See the   dummy  app for more detailed code on how to use this component.
 
 ## Styles
 Ember off-canvas sidebar come with about 14 different transitions for the sidebar. 
@@ -61,7 +73,7 @@ Just give any one of the following values for the *eoc-sidebar-trigger* modifier
 - st-effect-slide-along
 
 ## Configuring
-Add a configuration for `ember-off-canvas-sidebar` to include only the themes that you will use.
+Add a configuration for `ember-off-canvas-sidebar` to include only the transitions that you will use.
 ```js
 ENV['ember-off-canvas-sidebar'] = {
   includedTransitions: ['st-effect-open-door', 'st-effect-fall-down'],
@@ -73,8 +85,8 @@ ENV['ember-off-canvas-sidebar'] = {
 
 To exclude or not include a transition, means that it's css styles will not be bundled with your application, thus not polluting your app.
 
-> **Note:** including a blank array e.g. `includeTransitions: []` will not include any themes, leaving
-you to define your own theme styles. See the `vendor/ember-off-canvas-sidebar/transitions` directory
+> **Note:** including a blank array e.g. `includeTransitions: []` will not include any transitions, leaving
+you to define your own transition styles. See the `vendor/ember-off-canvas-sidebar/transitions` directory
 for reference.
 
 > **Note:** you may also want to set `excludeBaseStyles: true` so that this addon doesn't include the styles
