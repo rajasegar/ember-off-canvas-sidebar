@@ -1,8 +1,8 @@
 <div id="st-container" class="st-container">
-  <!-- 	
+  {{!-- 	
     example menus 
     these menus will be on top of the push wrapper
-  -->
+  --}}
   <EocSidebar @effect="st-effect-slide-in-on-top">
     <h2 class="icon icon-lab">Sidebar</h2>
     <ul>
@@ -102,12 +102,12 @@
     </ul>
   </EocSidebar>
 
-  <!-- content push wrapper -->
+  {{!-- content push wrapper --}}
   <div class="st-pusher">
-    <!-- 	
+    {{!-- 	
       example menus 
       these menus will be under the push wrapper
-    -->
+    --}}
 
     <EocSidebar @effect="st-effect-push">
       <h2 class="icon icon-lab">Sidebar</h2>
@@ -164,9 +164,9 @@
       </ul>
     </EocSidebar>
 
-    <div class="st-content"><!-- this is the wrapper for the content -->
-      <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-        <!-- Top Navigation -->
+    <div class="st-content">{{!-- this is the wrapper for the content --}}
+      <div class="st-content-inner">{{!-- extra div for emulating position:fixed of the menu --}}
+        {{!-- Top Navigation --}}
         <div class="codrops-top clearfix">
           <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/3DShadingWithBoxShadows/"><span>Previous Demo</span></a>
           <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16292"><span>Back to the Codrops Article</span></a></span>
@@ -176,20 +176,20 @@
         </header>
         <div class="main clearfix">
           <div id="st-trigger-effects" class="column">
-            <button data-effect="st-effect-1" {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
-            <button data-effect="st-effect-2" {{eoc-sidebar-trigger "st-effect-reveal"}}>Reveal</button>
-            <button data-effect="st-effect-3" {{eoc-sidebar-trigger "st-effect-push"}}>Push</button>
-            <button data-effect="st-effect-4" {{eoc-sidebar-trigger "st-effect-slide-along"}}>Slide along</button>
-            <button data-effect="st-effect-5" {{eoc-sidebar-trigger "st-effect-reverse-slide-out"}}>Reverse slide out</button>
-            <button data-effect="st-effect-6" {{eoc-sidebar-trigger "st-effect-rotate-pusher"}}>Rotate pusher</button>
-            <button data-effect="st-effect-7" {{eoc-sidebar-trigger "st-effect-3d-rotate-in"}}>3D rotate in</button>
-            <button data-effect="st-effect-8" {{eoc-sidebar-trigger "st-effect-3d-rotate-out"}}>3D rotate out</button>
-            <button data-effect="st-effect-9" {{eoc-sidebar-trigger "st-effect-scale-down-pusher"}}>Scale down pusher</button>
-            <button data-effect="st-effect-10" {{eoc-sidebar-trigger "st-effect-scale-up"}}>Scale Up</button>
-            <button data-effect="st-effect-11" {{eoc-sidebar-trigger "st-effect-scale-rotate-pusher"}}>Scale &amp; rotate pusher</button>
-            <button data-effect="st-effect-12" {{eoc-sidebar-trigger "st-effect-open-door"}}>Open door</button>
-            <button data-effect="st-effect-13" {{eoc-sidebar-trigger "st-effect-fall-down"}}>Fall down</button>
-            <button data-effect="st-effect-14" {{eoc-sidebar-trigger  "st-effect-delayed-3d-rotate"}}>Delayed 3D Rotate</button>
+            <button type="button" data-effect="st-effect-1" {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
+            <button type="button" data-effect="st-effect-2" {{eoc-sidebar-trigger "st-effect-reveal"}}>Reveal</button>
+            <button type="button" data-effect="st-effect-3" {{eoc-sidebar-trigger "st-effect-push"}}>Push</button>
+            <button type="button" data-effect="st-effect-4" {{eoc-sidebar-trigger "st-effect-slide-along"}}>Slide along</button>
+            <button type="button" data-effect="st-effect-5" {{eoc-sidebar-trigger "st-effect-reverse-slide-out"}}>Reverse slide out</button>
+            <button type="button" data-effect="st-effect-6" {{eoc-sidebar-trigger "st-effect-rotate-pusher"}}>Rotate pusher</button>
+            <button type="button" data-effect="st-effect-7" {{eoc-sidebar-trigger "st-effect-3d-rotate-in"}}>3D rotate in</button>
+            <button type="button" data-effect="st-effect-8" {{eoc-sidebar-trigger "st-effect-3d-rotate-out"}}>3D rotate out</button>
+            <button type="button" data-effect="st-effect-9" {{eoc-sidebar-trigger "st-effect-scale-down-pusher"}}>Scale down pusher</button>
+            <button type="button" data-effect="st-effect-10" {{eoc-sidebar-trigger "st-effect-scale-up"}}>Scale Up</button>
+            <button type="button" data-effect="st-effect-11" {{eoc-sidebar-trigger "st-effect-scale-rotate-pusher"}}>Scale &amp; rotate pusher</button>
+            <button type="button" data-effect="st-effect-12" {{eoc-sidebar-trigger "st-effect-open-door"}}>Open door</button>
+            <button type="button" data-effect="st-effect-13" {{eoc-sidebar-trigger "st-effect-fall-down"}}>Fall down</button>
+            <button type="button" data-effect="st-effect-14" {{eoc-sidebar-trigger  "st-effect-delayed-3d-rotate"}}>Delayed 3D Rotate</button>
           </div>
           <div class="column">
             <p>Sidebar menus or off-canvas navigations can be revealed in many creative ways.</p>
@@ -200,8 +200,8 @@
             <p><a href="http://tympanus.net/Development/HeaderEffects/">On Scroll Header Effects</a></p>
             <p><a href="http://tympanus.net/Development/PageTransitions/">A Collection of Page Transitions</a></p>
           </div>
-        </div><!-- /main -->
-      </div><!-- /st-content-inner -->
-    </div><!-- /st-content -->
-  </div><!-- /st-pusher -->
-</div><!-- /st-container -->
+        </div>{{!-- /main --}}
+      </div>{{!-- /st-content-inner --}}
+    </div>{{!-- /st-content --}}
+  </div>{{!-- /st-pusher --}}
+</div>{{!-- /st-container --}}
