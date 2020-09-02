@@ -26,7 +26,7 @@ jobs:
     - name: Templates
       run: yarn lint:hbs
 
-   publish:
+  publish:
     name: Publish Github Pages
     runs-on: ubuntu-latest
     needs: [tests_ember_compat]
@@ -91,5 +91,3 @@ jobs:
       run: yarn install
     - name: Test with ${{ matrix.scenario }}
       run: yarn test:ember-compatibility ${{ matrix.scenario }}
-
- 
