@@ -21,6 +21,7 @@ devDependencies:
   ember-export-application-global: 2.0.1
   ember-load-initializers: 2.1.1
   ember-maybe-import-regenerator: 0.1.6
+  ember-modifier: 2.1.0
   ember-qunit: 4.6.0
   ember-resolver: 8.0.2
   ember-source: 3.18.1
@@ -336,6 +337,15 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-/f8p4z+Auz0Uaf+i8Ekf1iM7wUNLcViFUGiPxKeXvxTSl63B875YPiVdUDdem7hREcI0E0kSpEhS8tF5RphK7Q==
+  /@babel/plugin-proposal-nullish-coalescing-operator/7.10.4:
+    dependencies:
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-wq5n1M3ZUlHl9sqT2ok1T2/MTt6AXE0e1Lz4WzWBr95LsAZ5qDXe4KnFuauYyEyLiohvXFMdbsOTMyLZs91Zlw==
   /@babel/plugin-proposal-nullish-coalescing-operator/7.10.4_@babel+core@7.11.4:
     dependencies:
       '@babel/core': 7.11.4
@@ -373,6 +383,16 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-LflT6nPh+GK2MnFiKDyLiqSqVHkQnVf7hdoAvyTnnKj9xB3docGRsdPuxp6qqqW19ifK3xgc9U5/FwrSaCNX5g==
+  /@babel/plugin-proposal-optional-chaining/7.11.0:
+    dependencies:
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-skip-transparent-expression-wrappers': 7.11.0
+      '@babel/plugin-syntax-optional-chaining': 7.8.3
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-v9fZIu3Y8562RRwhm1BbMRxtqZNFmFA2EG+pT2diuU8PT3H6T/KXoZ54KgYisfOFZHV6PfvAiBIZ9Rcz+/JCxA==
   /@babel/plugin-proposal-optional-chaining/7.11.0_@babel+core@7.11.4:
     dependencies:
       '@babel/core': 7.11.4
@@ -459,6 +479,14 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-d8waShlpFDinQ5MtvGU9xDAOzKH47+FFoney2baFIoMr952hKOLp1HR7VszoZvOsV/4+RRszNY7D17ba0te0ig==
+  /@babel/plugin-syntax-nullish-coalescing-operator/7.8.3:
+    dependencies:
+      '@babel/helper-plugin-utils': 7.10.4
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-aSff4zPII1u2QD7y+F8oDsz19ew4IGEJg9SVW+bqwpwtfFleiQDMdzA/R+UlWDzfnHFCxxleFT0PMIrR36XLNQ==
   /@babel/plugin-syntax-nullish-coalescing-operator/7.8.3_@babel+core@7.11.4:
     dependencies:
       '@babel/core': 7.11.4
@@ -491,6 +519,14 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-6VPD0Pc1lpTqw0aKoeRTMiB+kWhAoT24PA+ksWSBrFtl5SIRVpZlwN3NNPQjehA2E/91FV3RjLWoVTglWcSV3Q==
+  /@babel/plugin-syntax-optional-chaining/7.8.3:
+    dependencies:
+      '@babel/helper-plugin-utils': 7.10.4
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-KoK9ErH1MBlCPxV0VANkXW2/dw4vlbGDrFgz8bmUsBGYkFRcbRwMh6cIJubdPrkxRwuGdtCk0v/wPTKbQgBjkg==
   /@babel/plugin-syntax-optional-chaining/7.8.3_@babel+core@7.11.4:
     dependencies:
       '@babel/core': 7.11.4
@@ -845,6 +881,16 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-pehKf4m640myZu5B2ZviLaiBlxMCjSZ1qTEO459AXKX5GnPueyulJeCqZFs1nz/Ya2dDzXQ1NxZ/kKNWyD4h6w==
+  /@babel/plugin-transform-typescript/7.8.7:
+    dependencies:
+      '@babel/helper-create-class-features-plugin': 7.10.5
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/plugin-syntax-typescript': 7.10.4
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-7O0UsPQVNKqpHeHLpfvOG4uXmlw+MOxYvUv6Otc9uH5SYMIxvF6eBdjkWvC3f9G+VXe0RsNExyAQBeTRug/wqQ==
   /@babel/plugin-transform-unicode-escapes/7.10.4_@babel+core@7.11.4:
     dependencies:
       '@babel/core': 7.11.4
@@ -4834,6 +4880,27 @@ packages:
       node: 8.* || >= 10.*
     resolution:
       integrity: sha512-lo5YArbJzJi5ssvaGqTt6+FnhTALnSvYVuxM7lfyL1UCMudyNJ94ovH5C7n5il7ATd6WsNiAPRUO/v+s5Jq/aA==
+  /ember-cli-typescript/3.1.4:
+    dependencies:
+      '@babel/plugin-proposal-nullish-coalescing-operator': 7.10.4
+      '@babel/plugin-proposal-optional-chaining': 7.11.0
+      '@babel/plugin-transform-typescript': 7.8.7
+      ansi-to-html: 0.6.14
+      broccoli-stew: 3.0.0
+      debug: 4.1.1
+      ember-cli-babel-plugin-helpers: 1.1.0
+      execa: 3.4.0
+      fs-extra: 8.1.0
+      resolve: 1.17.0
+      rsvp: 4.8.5
+      semver: 6.3.0
+      stagehand: 1.0.0
+      walk-sync: 2.2.0
+    dev: true
+    engines:
+      node: 8.* || >= 10.*
+    resolution:
+      integrity: sha512-HJ73kL45OGRmIkPhBNFt31I1SGUvdZND+LCH21+qpq3pPlFpJG8GORyXpP+2ze8PbnITNLzwe5AwUrpyuRswdQ==
   /ember-cli-uglify/3.0.0:
     dependencies:
       broccoli-uglify-sourcemap: 3.2.0
@@ -4985,6 +5052,16 @@ packages:
       node: ^4.5 || 6.* || >= 7.*
     resolution:
       integrity: sha512-6wzYvnhg1ihQUT5yGqnLtleq3Nv5KNv79WhrEuNU9SwR4uIxCO+KpyC7r3d5VI0EM7/Nmv9Nd0yTkzmTMdVG1A==
+  /ember-destroyable-polyfill/2.0.1:
+    dependencies:
+      ember-cli-babel: 7.22.1
+      ember-cli-version-checker: 5.1.1
+      ember-compatibility-helpers: 1.2.1
+    dev: true
+    engines:
+      node: 10.* || >= 12
+    resolution:
+      integrity: sha512-hyK+/GPWOIxM1vxnlVMknNl9E5CAFVbcxi8zPiM0vCRwHiFS8Wuj7PfthZ1/OFitNNv7ITTeU8hxqvOZVsrbnQ==
   /ember-disable-prototype-extensions/1.1.3:
     dev: true
     engines:
@@ -5017,6 +5094,29 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-NdQYKK+m1qWbwNo85H80xXPXdso=
+  /ember-modifier-manager-polyfill/1.2.0:
+    dependencies:
+      ember-cli-babel: 7.22.1
+      ember-cli-version-checker: 2.2.0
+      ember-compatibility-helpers: 1.2.1
+    dev: true
+    engines:
+      node: 6.* || 8.* || >= 10.*
+    resolution:
+      integrity: sha512-bnaKF1LLKMkBNeDoetvIJ4vhwRPKIIumWr6dbVuW6W6p4QV8ZiO+GdF8J7mxDNlog9CeL9Z/7wam4YS86G8BYA==
+  /ember-modifier/2.1.0:
+    dependencies:
+      ember-cli-babel: 7.22.1
+      ember-cli-normalize-entity-name: 1.0.0
+      ember-cli-string-utils: 1.1.0
+      ember-cli-typescript: 3.1.4
+      ember-destroyable-polyfill: 2.0.1
+      ember-modifier-manager-polyfill: 1.2.0
+    dev: true
+    engines:
+      node: 10.* || >= 12
+    resolution:
+      integrity: sha512-tVmRcEloYg8AZHheEMhBhzX64r7n6AFLXG69L/jiHePvQzet9mjV18YiIPStQf+fdjTAO25S6yzNPDP3zQjWtQ==
   /ember-qunit/4.6.0:
     dependencies:
       '@ember/test-helpers': 1.7.2
@@ -5601,6 +5701,23 @@ packages:
       node: ^8.12.0 || >=9.7.0
     resolution:
       integrity: sha512-Y/URAVapfbYy2Xp/gb6A0E7iR8xeqOCXsuuaoMn7A5PzrXUK84E1gyiEfq0wQd/GHA6GsoHWwhNq8anb0mleIw==
+  /execa/3.4.0:
+    dependencies:
+      cross-spawn: 7.0.3
+      get-stream: 5.2.0
+      human-signals: 1.1.1
+      is-stream: 2.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 4.0.1
+      onetime: 5.1.2
+      p-finally: 2.0.1
+      signal-exit: 3.0.3
+      strip-final-newline: 2.0.0
+    dev: true
+    engines:
+      node: ^8.12.0 || >=9.7.0
+    resolution:
+      integrity: sha512-r9vdGQk4bmCuK1yKQu1KTwcT2zwfWdbdaXfCtAh+5nU/4fSX+JAb7vZGvI5naJrQlvONrEB20jeruESI69530g==
   /execa/4.0.3:
     dependencies:
       cross-spawn: 7.0.3
@@ -12034,6 +12151,7 @@ packages:
       node: 8.* || >= 10.*
     name: ember-cli-code-coverage
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/kategengler/ember-cli-code-coverage/tar.gz/3fc251f937bc2a9ceb4d830be4455110100f4969'
     version: 1.0.0-beta.9
 specifiers:
@@ -12058,6 +12176,7 @@ specifiers:
   ember-export-application-global: ^2.0.1
   ember-load-initializers: ^2.1.1
   ember-maybe-import-regenerator: ^0.1.6
+  ember-modifier: ^2.1.0
   ember-qunit: ^4.6.0
   ember-resolver: ^8.0.0
   ember-source: ~3.18.0
