@@ -53,7 +53,40 @@ Usage
 <button  {{eoc-sidebar-trigger "st-effect-slide-in-on-top"}}>Slide in on top</button>
 ```
 
-See the   dummy  app for more detailed code on how to use this component.
+
+For the following transitions , you need to add an additional wrapping `div class="st-pusher"` to make the transitions work properly.
+- st-effect-push
+- st-effect-rotate-pusher
+- st-effect-3d-rotate-in
+- st-effect-3d-rotate-out
+- st-effect-delayed-3d-rotate
+
+```hbs
+<div id="st-container" class="st-container">
+<div class="st-pusher">
+  <EocSidebar @effect="st-effect-1">
+    <h2 class="icon icon-lab">Sidebar</h2>
+    <ul>
+      <li><a class="icon icon-data" href="#">Data Management</a></li>
+      <li><a class="icon icon-location" href="#">Location</a></li>
+      <li><a class="icon icon-study" href="#">Study</a></li>
+      <li><a class="icon icon-photo" href="#">Collections</a></li>
+      <li><a class="icon icon-wallet" href="#">Credits</a></li>
+    </ul>
+  </EocSidebar>
+
+
+    <div class="st-content"><!-- this is the wrapper for the content -->
+      <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+        <!-- YOUR MAIN CONTENT GOES HERE -->
+        <!-- YOU CAN KEEP THE TRIGGER HERE ALSO -->
+      </div>
+    </div>
+</div>
+</div>
+```
+
+See the `dummy` app for more detailed code on how to use this component.
 
 ## Styles
 Ember off-canvas sidebar come with about 14 different transitions for the sidebar. 
