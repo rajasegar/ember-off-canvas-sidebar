@@ -9,6 +9,7 @@ ember-off-canvas-sidebar
 
 
 Ember addon for off-canvas sidebar menu with transitions.
+This addon is inspired by [Transitions for Off canvas navigations](https://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations) article in [Codrops](https://tympanus.net/codrops).
 
 
 
